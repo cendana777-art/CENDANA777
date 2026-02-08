@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bukti Kemenangan CENDANA777</title>
+<meta name="description" content="Bukti kemenangan member CENDANA777 hari ini. WD besar, real, dan update setiap hari.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#070a12;
+  --card:#0f1424;
+  --gold:#f5c56b;
+  --accent:#6be1ff;
+  --danger:#ff5c7a;
+  --text:#e9ecf1;
+  --muted:#9aa3b2;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Arial;
+  color:var(--text);
+  background: radial-gradient(1200px 600px at 50% -10%, #1a2150 0%, transparent 60%), var(--bg);
+}
+
+/* Container */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:18px;
+}
+
+/* Header */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter: blur(8px);
+  background:linear-gradient(180deg, rgba(7,10,18,.85), rgba(7,10,18,.35));
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav{display:flex; align-items:center; justify-content:space-between;}
+.brand{display:flex; gap:10px; align-items:center;}
+.logo{
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#ffd98a,#b88a2e);
+  box-shadow:0 10px 30px rgba(245,197,107,.35);
+}
+.brand h1{font-size:18px; margin:0; letter-spacing:.5px;}
+.cta{
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+  background:linear-gradient(135deg,#6be1ff,#4aa3ff);
+  color:#08121f;
+  box-shadow:0 10px 30px rgba(107,225,255,.35);
+  animation:pulse 2.5s infinite;
+}
+
+/* Hero */
+.hero{padding:28px 0;}
+.hero-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:18px;}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+.hero-card{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.badge{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(107,225,255,.12);
+  color:var(--accent);
+  font-weight:600;
+}
+.hero h2{font-size:36px; margin:12px 0;}
+.hero p{color:var(--muted); line-height:1.6;}
+
+/* Stats */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px;}
+.stat{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:14px;}
+.stat b{font-size:20px;}
+.counter{font-weight:800; color:var(--gold);}
+
+/* Hero visual */
+.hero-visual{
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  background: radial-gradient(600px 300px at 50% 0, rgba(245,197,107,.25), transparent 60%), linear-gradient(180deg,#0b1030,#0a0f24);
+}
+.hero-visual .inner{padding:22px;}
+.glow{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+.pill{
+  padding:10px;
+  border-radius:12px;
+  background:rgba(245,197,107,.12);
+  color:var(--gold);
+  text-align:center;
+}
+
+/* Section */
+section{padding:26px 0;}
+.section-title{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;}
+.section-title h3{margin:0;}
+.filter{display:flex; gap:8px;}
+.filter button{
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.08);
+  background:var(--card);
+  color:var(--text);
+  cursor:pointer;
+}
+.filter button.active{
+  background:linear-gradient(135deg,#ffd98a,#b88a2e);
+  color:#1b1204;
+}
+
+/* Grid cards */
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:520px){.grid{grid-template-columns:1fr;}}
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.card:hover{transform:translateY(-6px) scale(1.01); box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.card img{width:100%; display:block;}
+.card .meta{padding:12px;}
+.amount{font-size:22px; font-weight:800; color:var(--gold);}
+.meta small{color:var(--muted);}
+.proof{display:flex; justify-content:space-between; align-items:center; margin-top:8px;}
+.tag{
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(107,225,255,.12);
+  color:var(--accent);
+}
+
+/* Fixed CTA */
+.fixed-cta{
+  position:fixed; left:0; right:0; bottom:0;
+  padding:12px; z-index:60;
+  background:linear-gradient(180deg, rgba(7,10,18,.0), rgba(7,10,18,.85));
+}
+.fixed-cta .wrap{display:flex; gap:10px;}
+.btn{
+  flex:1;
+  text-align:center;
+  padding:14px;
+  border-radius:14px;
+  font-weight:800;
+  text-decoration:none;
+}
+.btn.wa{background:linear-gradient(135deg,#4cff9a,#1ed760); color:#042410;}
+.btn.tg{background:linear-gradient(135deg,#6be1ff,#4aa3ff); color:#08121f;}
+
+/* Footer */
+footer{padding:24px 0; color:var(--muted); text-align:center;}
+
+/* Slider */
+.slider{overflow:hidden; width:100%; margin-top:14px;}
+.slides{display:flex; gap:14px; animation:scroll 25s linear infinite;}
+.slides img{width:260px; border-radius:16px;}
+@keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+@keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-6px);}100%{transform:translateY(0);}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(245,197,107,.6);}70%{box-shadow:0 0 0 14px rgba(245,197,107,0);}100%{box-shadow:0 0 0 0 rgba(245,197,107,0);}}
+.logo{animation:float 3s ease-in-out infinite;}
+
+/* Popup */
+.overlay{position:fixed; inset:0; background:rgba(0,0,0,.6); display:none; z-index:80;}
+.popup{
+  position:fixed; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:min(92%,420px);
+  background:var(--card); border-radius:18px; border:1px solid rgba(255,255,255,.08);
+  padding:18px; display:none; z-index:90;
+}
+.popup h4{margin:0 0 6px;}
+.popup p{color:var(--muted);}
+.popup .row{display:flex; gap:10px; margin-top:10px;}
+.close{cursor:pointer; opacity:.8;}
+
+/* Safe badge */
+.safe{background:rgba(107,225,255,.12); color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">
+        <img src="https://i.postimg.cc/DyJqVmJy/Ip1el99re-Bm.png" alt="Logo CENDANA777" style="width:100%;height:100%;object-fit:cover;border-radius:12px">
+      </div>
+      <h1>CENDANA777</h1>
+    </div>
+    <a class="cta" href="#bukti">🔥 Lihat Bukti</a>
+  </div>
+</header>
+
+<main class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <span class="badge">✅ Update Hari Ini</span>
+        <h2>Bukti Kemenangan Member<br/>CENDANA777</h2>
+        <p>Data real, transparan, dan diperbarui setiap hari. Lihat sendiri hasil WD member kami dan rasakan pengalaman bermain yang nyaman.</p>
+        <div class="stats">
+          <div class="stat"><b class="counter" data-target="1240">0</b><br/><small>Member Aktif</small></div>
+          <div class="stat"><b class="counter" data-target="98">0</b>%<br/><small>Kepuasan</small></div>
+          <div class="stat"><b>24/7</b><br/><small>Support</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="inner">
+          <div class="glow">
+            <div class="pill">WD HARI INI</div>
+            <div class="pill">REAL TIME</div>
+            <div class="pill">FAST RESPON</div>
+          </div>
+          <div style="margin-top:16px">
+            <img src="https://i.postimg.cc/bNQ06fHD/Gambar-(3).png" alt="Bukti Kemenangan CENDANA777" style="width:100%;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.6)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="safe">Konten hiburan • Informasi transparan • Tanpa klaim berlebihan</div>
+
+  <!-- BUCKET BUKTI -->
+  <div class="section-title">
+    <h3>🔥 Bukti Kemenangan Terbaru</h3>
+    <div class="filter">
+      <button class="active" data-filter="all">Semua</button>
+      <button data-filter="besar">WD Besar</button>
+      <button data-filter="harian">Harian</button>
+    </div>
+  </div>
+  <div class="grid" id="grid">
+    <div class="card" data-cat="besar">
+      <img src="https://i.postimg.cc/cHRYFQwP/image-(2).jpg" alt="Bukti WD">
+      <div class="meta">
+        <div class="amount">WD Rp 50.000.000</div>
+        <div class="proof"><small>02 Feb 2026 • 21:14</small><span class="tag">Verified</span></div>
+      </div>
+    </div>
+    <div class="card" data-cat="harian">
+      <img src="https://i.postimg.cc/76nG3qy4/Mahjong-Wins-3-Black-Scatter-(5).png" alt="Bukti WD">
+      <div class="meta">
+        <div class="amount">WD Rp 50.000.000</div>
+        <div class="proof"><small>02 Feb 2026 • 18:02</small><span class="tag">Verified</span></div>
+      </div>
+    </div>
+    <div class="card" data-cat="besar">
+      <img src="https://i.postimg.cc/fRSVHcNQ/Mahjong-Wins-3-Black-Scatter.png" alt="Bukti WD">
+      <div class="meta">
+        <div class="amount">WD Rp 22.000.000</div>
+        <div class="proof"><small>02 Feb 2026 • 23:41</small><span class="tag">Verified</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FIXED CTA -->
+<div class="fixed-cta">
+  <div class="container wrap">
+    <a class="btn wa" href="https://wa.me/6287723764088" target="_blank">WhatsApp Admin</a>
+    <a class="btn tg" href="https://tiga16.cendana777free.com/" target="_blank">Gabung Situs</a>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h4>🔥 Aktivitas Terbaru</h4>
+    <span class="close" onclick="togglePopup(false)">✕</span>
+  </div>
+  <p><b>Member</b> baru saja menyelesaikan penarikan <b>Rp <span id="popAmount">12.500.000</span></b></p>
+  <div class="row">
+    <a class="btn wa" href="https://cendana777ares.com/" target="_blank">Ikut Coba</a>
+    <a class="btn tg" href="https://tiga16.cendana777free.com/" target="_blank">Gabung Situs</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">© 2026 CENDANA777 • Hiburan Online</div>
+</footer>
+
+<script>
+// Filter buttons
+const btns = document.querySelectorAll('.filter button');
+const cards = document.querySelectorAll('.card');
+btns.forEach(b=>{
+  b.addEventListener('click',()=>{
+    btns.forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    const f=b.dataset.filter;
+    cards.forEach(c=>{ c.style.display=(f==='all'||c.dataset.cat===f)?'block':'none'; });
+  });
+});
+
+// Counter
+const counters=document.querySelectorAll('.counter');
+counters.forEach(c=>{
+  const t=+c.dataset.target;
+  let n=0;
+  const inc=Math.max(1,Math.floor(t/60));
+  const i=setInterval(()=>{
+    n+=inc;
+    if(n>=t){c.textContent=t; clearInterval(i);} 
+    else c.textContent=n;
+  },20);
+});
+
+// Popup FOMO
+const amounts=[12500000,7200000,18500000,25000000];
+function togglePopup(s){
+  document.getElementById('overlay').style.display=s?'block':'none';
+  document.getElementById('popup').style.display=s?'block':'none';
+}
+setInterval(()=>{
+  document.getElementById('popAmount').textContent=amounts[Math.floor(Math.random()*amounts.length)].toLocaleString('id-ID');
+  togglePopup(true);
+  setTimeout(()=>togglePopup(false),5500);
+},18000);
+
+// Exit intent
+let exitShown=false;
+document.addEventListener('mouseleave',e=>{
+  if(e.clientY<10 && !exitShown){ exitShown=true; togglePopup(true); }
+});
+</script>
+
+</body>
+</html>
